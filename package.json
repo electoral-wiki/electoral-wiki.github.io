@@ -1,0 +1,27 @@
+{
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel serve",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "2.13.0",
+    "svgo": "^3.3.2",
+    "@tailwindcss/postcss": "^4.0.15",
+    "tailwindcss": "^4.0.15"
+  },
+  "parcel": {
+    "@parcel/transformer-html": {
+      "urlTransforms": {
+        "exclude": [
+          "https://fonts.googleapis.com/**",
+          "https://fonts.gstatic.com/**",
+          "https://github.com/electoral-wiki"
+        ]
+      }
+    }
+  },
+  "volta": {
+    "node": "20.19.0"
+  }
+}

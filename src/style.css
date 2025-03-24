@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+    --default-font-family: "Hind", sans-serif;
+}
+
+:root {
+    line-height: 130%;
+}
